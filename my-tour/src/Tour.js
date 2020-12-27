@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Tour = ({id,image,info,price,name,removeMe}) => {
+const Tour = ({id,image,info,price,name, removeMe}) => {
   const [showMore,setShowMore]=useState(false);
   return <article className="single-tour">
         <img src={image} alt={name}/>

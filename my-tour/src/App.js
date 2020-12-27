@@ -32,9 +32,12 @@ function App() {
       </main>
     )
   }
-  return (<main>
-      <Tours  tours={tours} removeMe={removeMe}/>
-  </main>
+  return (
+  <main>
+
+      {tours.length>0?<Tours  tours={tours} removeMe={removeMe}/>:<div className="title"><h2>no Tours left</h2>
+      <button className="btn" onClick={fetchTours} >refresh</button> </div>}
+  </main> 
     
   )
 }
